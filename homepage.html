@@ -1,0 +1,374 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SkyWarrior Briefing Room Resources</title>
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="SkyWarrior" />
+<link rel="manifest" href="site.webmanifest" />
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="page">
+
+<header class="hero">
+<img src="skywarrior-logo.png?v=1.1.4" alt="SkyWarrior Logo" class="logo" />
+
+<div class="hero-main">
+<h1>SkyWarrior Flight Training</h1>
+<div class="hero-subtitle">Briefing Room Resources</div>
+</div>
+
+<div class="clock">
+<div id="dateLine" class="date-line"></div>
+<div id="timeLine" class="time-line"></div>
+</div>
+</header>
+
+<section class="search-panel">
+<form action="https://www.google.com/search" method="get" target="_blank">
+<input type="text" name="q" placeholder="Search Google..." autocomplete="off" />
+<button type="submit">Search</button>
+</form>
+<p class="search-note">
+Resources and search results open in a separate tab.
+</p>
+</section>
+
+<main class="groups">
+
+<section class="group">
+<h2>Weather & Conditions</h2>
+
+<a class="resource-card" href="https://aviationweather.gov/" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 13v7a2 2 0 0 0 4 0"/>
+<path d="M12 2v2"/>
+<path d="M20.992 13a1 1 0 0 0 .97-1.274 10.284 10.284 0 0 0-19.923 0A1 1 0 0 0 3 13z"/>
+</svg>
+</div>
+<div>
+<h3>Aviation Weather</h3>
+<p>Current aviation weather, forecasts, radar, and weather products.</p>
+</div>
+</a>
+
+<a id="localWeatherLink" class="resource-card" href="https://metar-taf.com/metar/KPNS" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="4"/>
+<path d="M12 2v2"/>
+<path d="M12 20v2"/>
+<path d="m4.93 4.93 1.41 1.41"/>
+<path d="m17.66 17.66 1.41 1.41"/>
+<path d="M2 12h2"/>
+<path d="M20 12h2"/>
+<path d="m6.34 17.66-1.41 1.41"/>
+<path d="m19.07 4.93-1.41 1.41"/>
+</svg>
+</div>
+<div>
+<h3 id="localWeatherName">Pensacola Weather</h3>
+<p id="localWeatherDescription">Current weather, METAR, and TAF for KPNS.</p>
+</div>
+</a>
+<a class="resource-card" href="https://www.windy.com" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12.8 19.6A2 2 0 1 0 14 16H2"/>
+<path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/>
+<path d="M9.8 4.4A2 2 0 1 1 11 8H2"/>
+</svg>
+</div>
+<div>
+<h3>Windy</h3>
+<p>Interactive weather maps and forecasts.</p>
+</div>
+</a>
+<a class="resource-card" href="https://notams.aim.faa.gov/notamSearch/" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M11.1 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.589 3.588A2.4 2.4 0 0 1 20 8v3.25"/>
+<path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="m21 22-2.88-2.88"/><circle cx="16" cy="17" r="3"/>
+</svg>
+</div>
+<div>
+<h3>FAA NOTAM Search</h3>
+<p>Search FAA Notices to Air Missions.</p>
+</div>
+</a>
+<a class="resource-card" href="https://www.usahas.com/" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M16 7h.01"/>
+<path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/>
+<path d="m20 7 2 .5-2 .5"/>
+<path d="M10 18v3"/>
+<path d="M14 17.75V21"/>
+<path d="M7 18a6 6 0 0 0 3.84-10.61"/>
+</svg>
+</div>
+<div>
+<h3>Bird Hazard</h3>
+<p>Bird activity and wildlife strike information.</p>
+</div>
+</a>
+</section>
+
+<section class="group">
+<h2>Flight Planning</h2>
+
+<a class="resource-card" href="https://skyvector.com/" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M19.07 4.93A10 10 0 0 0 6.99 3.34"/>
+<path d="M4 6h.01"/>
+<path d="M2.29 9.62A10 10 0 1 0 21.31 8.35"/>
+<path d="M16.24 7.76A6 6 0 1 0 8.23 16.67"/>
+<path d="M12 18h.01"/>
+<path d="M17.99 11.66A6 6 0 0 1 15.77 16.67"/>
+<circle cx="12" cy="12" r="2"/>
+<path d="m13.41 10.59 5.66-5.66"/>
+</svg>
+</div>
+<div>
+<h3>SkyVector</h3>
+<p>VFR and IFR charts, airport information, and flight planning.</p>
+</div>
+</a>
+<a class="resource-card" href="https://e6bx.com/e6b/" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<rect width="16" height="20" x="4" y="2" rx="2"/>
+<line x1="8" x2="16" y1="6" y2="6"/>
+<line x1="16" x2="16" y1="14" y2="18"/>
+<path d="M16 10h.01"/>
+<path d="M12 10h.01"/>
+<path d="M8 10h.01"/>
+<path d="M12 14h.01"/>
+<path d="M8 14h.01"/>
+<path d="M12 18h.01"/>
+<path d="M8 18h.01"/>
+</svg>
+</div>
+<div>
+<h3>E6B Calculator</h3>
+<p>Online flight computer and aviation calculator.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://globe.adsbexchange.com/" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+</svg>
+</div>
+<div>
+<h3>Aircraft Tracking</h3>
+<p>Live aircraft tracking and flight activity.</p>
+</div>
+</a>
+<a class="resource-card" href="https://login.foreflight.com/login" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M16 14v2.2l1.6 1"/>
+<path d="M16 4h2a2 2 0 0 1 2 2v.832"/>
+<path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h2"/>
+<circle cx="16" cy="16" r="6"/>
+<rect x="8" y="2" width="8" height="4" rx="1"/>
+</svg>
+</div>
+<div>
+<h3>ForeFlight</h3>
+<p>Flight planning, weather, navigation, and electronic flight bag resources.</p>
+</div>
+</a>
+</section>
+
+<section class="group">
+<h2>Flight Training & Reference</h2>
+
+<a class="resource-card" href="https://sso.skywarriorinc.com/login" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16M8 14h3M13 14h3M8 17h3"/></svg>
+</div>
+<div>
+<h3>Flight Scheduling (MFT)</h3>
+<p>My Flight Solutions scheduling system.</p>
+</div>
+</a>
+<a class="resource-card" href="https://app.flightschedulepro.com/Account/Login" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16M8 14h3M13 14h3M8 17h3"/></svg>
+</div>
+<div>
+<h3>Flight Scheduling (FSP)</h3>
+<p>Flight Schedule Pro by PilotBase.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://my.gonimbl.com/login" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24"><path d="M4 5c3 0 5.5.6 8 3v12c-2.5-2.2-5-3-8-3V5Z"/><path d="M20 5c-3 0-5.5.6-8 3v12c2.5-2.2 5-3 8-3V5Z"/><path d="M12 8v12"/></svg>
+</div>
+<div>
+<h3>Nimbl Manuals</h3>
+<p>Aviation manuals, publications, and operational documents.</p>
+</div>
+</a>
+<a class="resource-card" href="https://iacra.faa.gov" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M16.051 12.616a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.866l-1.156-1.153a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z"/>
+<path d="M8 15H7a4 4 0 0 0-4 4v2"/>
+<circle cx="10" cy="7" r="4"/>
+</svg>
+</div>
+<div>
+<h3>IACRA</h3>
+<p>FAA Integrated Airman Certification and Rating Application.</p>
+</div>
+</a>
+<a class="resource-card" href="https://www.faa.gov" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M2 22h20"/>
+<path d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 6l.9-.45a2 2 0 0 1 2.09.2l4.02 3a2 2 0 0 0 2.1.2l4.19-2.06a2.41 2.41 0 0 1 1.73-.17L21 7a1.4 1.4 0 0 1 .87 1.99l-.38.76c-.23.46-.6.84-1.07 1.08L7.58 17.2a2 2 0 0 1-1.22.18Z"/>
+</svg>
+</div>
+<div>
+<h3>FAA.gov</h3>
+<p>FAA regulations, publications, guidance, and aviation resources.</p>
+</div>
+</a>
+<a class="resource-card" href="https://train.jeppesen.com" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+</svg>
+</div>
+<div>
+<h3>Jeppesen Training</h3>
+<p>Access Jeppesen online training courses and learning resources.</p>
+</div>
+</a>
+</section>
+
+</main>
+<section id="instructorTools" class="instructor-tools" hidden>
+<h2>Instructor Tools</h2>
+
+<div class="instructor-tool-grid">
+<a class="resource-card" href="https://skywarriorgcc.sharepoint.com/:f:/g/EqvsChB7XwxEnnYRzwwAuRUBF50eVnMMNPGdmj9yCozvDQ?e=SNpKg2" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/>
+<path d="M3 10h18"/>
+</svg>
+</div>
+<div>
+<h3>NIFE Forms &amp; Publications</h3>
+<p>Forms, publications, and shared documents for NIFE instructors.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://outlook.office.com/mail/" target="_blank" rel="noopener noreferrer">
+<div class="resource-icon">
+<svg viewBox="0 0 24 24">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 7 9 6 9-6"/>
+</svg>
+</div>
+<div>
+<h3>Outlook Email</h3>
+<p>Email completed forms and access your SkyWarrior mailbox.</p>
+</div>
+</a>
+</div>
+
+<p class="instructor-note">
+For your security, sign out of Microsoft 365 when finished.
+</p>
+</section>
+
+<footer class="footer">
+<span id="portalVersion">Resource Portal</span>
+<span id="portalUpdated"></span>
+</footer>
+
+</div>
+
+<script src="portal-config.js"></script>
+<script>
+function applyPortalConfig() {
+const config = window.portalConfig || {};
+const weather = config.weather || {};
+const features = config.features || {};
+const build = config.build || {};
+
+const weatherLink = document.getElementById("localWeatherLink");
+const weatherName = document.getElementById("localWeatherName");
+const weatherDescription = document.getElementById("localWeatherDescription");
+const instructorTools = document.getElementById("instructorTools");
+
+if (instructorTools) {
+instructorTools.hidden = features.nifeInstructorTools !== true;
+}
+
+if (weather.url) {
+weatherLink.href = weather.url;
+}
+if (weather.name) {
+weatherName.textContent = weather.name;
+}
+if (weather.description) {
+weatherDescription.textContent = weather.description;
+}
+
+document.getElementById("portalVersion").textContent =
+build.version ? `Resource Portal v${build.version}` : "Resource Portal";
+
+if (build.releaseDate) {
+const releaseDate = new Date(`${build.releaseDate}T00:00:00`);
+document.getElementById("portalUpdated").textContent =
+`Updated ${releaseDate.toLocaleDateString("en-US", {
+month: "long",
+year: "numeric"
+})}`;
+}
+}
+
+function updateDateTime() {
+const now = new Date();
+
+document.getElementById("dateLine").textContent =
+now.toLocaleDateString("en-US", {
+weekday: "long",
+month: "long",
+day: "numeric",
+year: "numeric"
+});
+
+document.getElementById("timeLine").textContent =
+now.toLocaleTimeString("en-US", {
+hour: "numeric",
+minute: "2-digit"
+});
+}
+
+applyPortalConfig();
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+</body>
+</html>
